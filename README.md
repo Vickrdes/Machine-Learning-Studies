@@ -1,37 +1,18 @@
-# 🧬 Classificação de Câncer de Mama (SVM)
-### Desafio 2: Exploração da Fronteira de Decisão
+# 🤖 Machine Learning Studies
 
-Este projeto utiliza o dataset clássico **Breast Cancer Wisconsin (Diagnostic)** para classificar tumores como malignos ou benignos. O foco principal foi o ajuste de hiperparâmetros do modelo **SVM (Support Vector Machine)** para lidar com dados de alta dimensionalidade.
+Repositório dedicado ao estudo e implementação de algoritmos de **Aprendizado de Máquina**, utilizando bases de dados clássicas do **Kaggle** e **UCI Machine Learning Repository**.
 
----
+## 📑 Projetos e Estudos
+Cada pasta neste repositório contém um notebook `.ipynb` com a análise completa e um README específico detalhando os experimentos.
 
-## 🎯 Objetivo do Desafio
-O conjunto de dados possui mais de 30 características técnicas (raio, textura, concavidade, etc.). O objetivo foi:
-* Testar a eficácia de diferentes **Kernels** (Linear vs RBF).
-* Ajustar o parâmetro de regularização **C** para equilibrar a fronteira de decisão.
-* Otimizar o compromisso entre **Precisão** (evitar alarmes falsos) e **Recall** (não deixar nenhum caso positivo passar despercebido).
+* **🧬 [Breast Cancer Wisconsin](./Breast%20Cancer%20Wisconsin%20(Diagnostic)/):** Classificação binária com SVM e comparação de kernels.
+* **🩺 [PIMA Indians Diabetes](./PIMA%20-%20Indians%20Diabetes%20Database/):** Previsão de diabetes em pacientes utilizando análise exploratória e modelos preditivos.
+* **🌸 [Iris Species](./Iris%20Species%20Dataset/):** O clássico "Hello World" do ML para classificação multi-classe.
 
-## 🛠️ Tecnologias e Técnicas
-* **Linguagem:** Python (Google Colab / Kaggle)
-* **Biblioteca Principal:** Scikit-learn
-* **Algoritmo:** SVM (Support Vector Machine)
-* **Pré-processamento:** Normalização de dados (StandardScaler), essencial para o funcionamento do SVM.
-
-## 📊 Experimentos Realizados
-
-### 1. Kernels Comparados
-- **Linear:** Testado para verificar a separabilidade linear dos dados.
-- **RBF (Radial Basis Function):** Utilizado para capturar relações não-lineares mais complexas entre as 30 variáveis.
-
-### 2. Ajuste do Parâmetro C
-Busquei o valor ideal de **C** para:
-- Evitar o *overfitting* (C muito alto).
-- Garantir que o modelo não fosse simples demais (*underfitting*) a ponto de perder casos reais de câncer (Recall baixo).
+## 🛠️ Tecnologias e Ferramentas
+- **Linguagem:** Python
+- **Plataformas:** Google Colab / Kaggle
+- **Bibliotecas:** Scikit-learn, Pandas, NumPy e Matplotlib/Seaborn.
 
 ---
-
-## 📈 Conclusões
-Através da análise da **Matriz de Confusão**, foi possível observar como a variação do Kernel e do parâmetro C impacta diretamente na detecção de casos malignos, priorizando um Recall alto dado a natureza crítica do diagnóstico médico.
-
----
-> **Dataset Original:** [UCI Machine Learning Repository / Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+*Desenvolvido por Vitória Rodrigues de Souza como parte da trilha de aprendizado em Ciência de Dados.*
